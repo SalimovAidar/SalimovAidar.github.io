@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("MontserratLight"),
+    url("../assets/fonts/MontserratLight.woff2") format("woff2"),
+    url("../assets/fonts/MontserratLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("MontserratRegular"),
+    url("../assets/fonts/MontserratRegular.woff2") format("woff2"),
+    url("../assets/fonts/MontserratRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterRegular"),
+    url("../assets/fonts/InterRegular.woff2") format("woff2"),
+    url("../assets/fonts/InterRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterMedium"),
+    url("../assets/fonts/InterMedium.woff2") format("woff2"),
+    url("../assets/fonts/InterMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterBold"),
+    url("../assets/fonts/InterBold.woff2") format("woff2"),
+    url("../assets/fonts/InterBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterBlack"),
+    url("../assets/fonts/InterBlack.woff2") format("woff2"),
+    url("../assets/fonts/InterBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* global */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #0E1014;
+  color: #E4E5EA;
+}
+
+a {
+  text-decoration: none;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  transition: all .5s ease-in-out;
+}
+
+a:hover {
+  color: #4077F3;
+  transition: all .5s ease-in-out;
+}
+
+path {
+  transition: all .5s ease-in-out;
+}
+
+a:hover svg path {
+  fill: #4077F3;
+  transition: all .5s ease-in-out;
+}
+
+.container {
+  padding: 6% 5%;
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button {
+  padding: 20px 35px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E4E5EA;
+  border: none;
+  background-color: #4077F3;
+  transition: all .5s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 20px #536797;
+  transition: all .5s ease-in-out;
+}
+
+@media screen and (min-width:1200px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .container {
+    padding: 0 150px;
+  }
+}
