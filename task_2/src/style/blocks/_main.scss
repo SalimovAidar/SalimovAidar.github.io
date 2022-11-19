@@ -1,0 +1,245 @@
+/* main */
+.main {
+  background-image: url('../../assets/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding: 40px 4% 60px 4%;
+
+    @media screen and (min-width:768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width:1200px) {
+      padding: 0 80px;
+    }
+
+    @media screen and (min-width:1400px) {
+      padding: 0 150px;
+    }
+  }
+
+  &__left {
+
+    @media screen and (min-width:768px) {
+      margin-left: -4px;
+    }
+  }
+
+  &__title {
+    max-width: 272px;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 15px;
+    padding-left: 1px;
+
+    &-span {
+      font-weight: 900;
+      background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    @media screen and (min-width:768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__description {
+    max-width: 272px;
+    padding-left: 1px;
+    margin-bottom: 45px;
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media screen and (min-width:768px) {
+      padding-left: 2px;
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    background-image: none;
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 124px;
+  }
+}
+
+.catalog {
+
+  &__text {
+    max-width: 335px;
+    margin-bottom: 20px;
+    padding: 0.5px 0 0 1px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+
+    &-span {
+      background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      @media screen and (min-width:768px) {
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      text-align: end;
+      margin-bottom: 40px;
+      padding: 0;
+      text-align: right;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__list {
+    max-width: 335px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+      justify-content: flex-end;
+      margin-bottom: 61px;
+    }
+  }
+
+  &__item {
+    width: 125px;
+    margin: 0 0 10px 0;
+    padding-left: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin: 0 0 14px 0;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(4) {
+      width: 150px;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6) {
+
+      @media screen and (min-width:768px) {
+        margin: 0 0 30px 0;
+      }
+    }
+
+    &:nth-child(5),
+    &:nth-child(7) {
+
+      @media screen and (min-width:768px) {
+        padding-right: 13.5px;
+      }
+    }
+
+    &:nth-child(7),
+    &:nth-child(8) {
+
+      @media screen and (min-width:768px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &::before {
+      content: url('../../assets/images/Line\ 9.svg');
+      position: absolute;
+      top: -4px;
+      left: 3px;
+      font-size: 10px;
+
+      @media screen and (min-width:768px) {
+        display: none;
+      }
+    }
+
+    &-mobile {
+
+      @media screen and (min-width:768px) {
+        display: none;
+      }
+    }
+
+    &-desktop {
+      display: none;
+
+      @media screen and (min-width:768px) {
+        display: inline-block;
+        text-align: end;
+        padding-left: 0;
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      width: 151px;
+      text-align: end;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    padding-top: 15px;
+    text-align: end;
+  }
+}
+
+.desktop {
+
+  &__title {
+    margin-bottom: 6.5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+}
+
+.catalog {
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width:768px) {
+      display: inline-block;
+    }
+  }
+}
